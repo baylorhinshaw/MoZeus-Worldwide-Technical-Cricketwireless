@@ -1,0 +1,627 @@
+@font-face {
+    font-family: 'SimplyCricketBold';
+       src: url('../fonts/SimplyCricket-Bold.eot');
+       src: url('../fonts/SimplyCricket-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SimplyCricket-Bold.woff') format('woff'),
+            url('../fonts/SimplyCricket-Bold.ttf') format('truetype'),
+            url('../fonts/SimplyCricket-Bold.svg#UbuntuItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SimplyCricketBook';
+       src: url('../fonts/SimplyCricket-Book.eot');
+       src: url('../fonts/SimplyCricket-Book.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SimplyCricket-Book.woff') format('woff'),
+            url('../fonts/SimplyCricket-Book.ttf') format('truetype'),
+            url('../fonts/SimplyCricket-Book.svg#UbuntuItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SimplyCricketDemibold';
+       src: url('../fonts/SimplyCricket-Demibold.eot');
+       src: url('../fonts/SimplyCricket-Demibold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SimplyCricket-Demibold.woff') format('woff'),
+            url('../fonts//SimplyCricket-Demibold.ttf') format('truetype'),
+            url('../fonts/SimplyCricket-Demibold.svg#UbuntuItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SimplyCricketMedium';
+       src: url('../fonts/SimplyCricket-Medium.eot');
+       src: url('../fonts/SimplyCricket-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SimplyCricket-Medium.woff') format('woff'),
+            url('../fonts/SimplyCricket-Medium.ttf') format('truetype'),
+            url('../fonts/SimplyCricket-Medium.svg#UbuntuItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {    
+    margin: 0%;
+    width:100%;
+    max-width:100vh;
+    font-family: 'SimplyCricketBook' , sans-serif;
+    font-size:16px;
+}
+
+h1, h2, h4, h5, h6 {
+    margin:.5%;
+}
+
+h1 {
+    font-family: 'SimplyCricketBold' , sans-serif;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'SimplyCricketDemibold' , sans-serif;
+    padding-top: 4%;
+    color: white;
+    font-size: 40px;
+    margin:2%;
+}
+
+h3 {
+    font-family: 'SimplyCricketDemibold' , sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+/* Black Navigation Bar */
+.black-nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    color: white;
+    background-color: rgb(63, 63, 63);
+}
+
+.black-nav-bar a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.valignmiddle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* White Navigation Bar */
+.white-nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'SimplyCricketDemibold' , sans-serif;
+    width: 100vw;
+    height: 7vh;
+    color: black;
+    background-color: white;
+}
+
+.white-nav-bar a {
+    margin-left: 40px;
+    color: black;
+    font-size:18px;
+    text-decoration: none;
+}
+
+/* Using left and right class in both Black and White Navigation Bars */
+.left {
+    justify-content: flex-start;
+    width: 50vw;
+    height: auto;
+    padding-left: 10%;
+    margin: 0;
+}
+
+.right {
+    justify-content: flex-end;
+    text-align: end;
+    width: 50vw;
+    height: auto;
+    padding-right: 10%;
+    margin:0;
+}
+
+/* WWE Superstar The Miz Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-image: url(../Characters.png);
+    background-color: rgb(124, 173, 50);
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    width: 100vw;  
+    align-items: center;
+    height: 50vh;
+    padding: 0;
+    margin: 0%;
+}
+
+
+.left-container {
+    width: 50vw;
+    height: auto;
+    margin:0;
+}
+
+#summer-slam {
+    width: 70%;
+    height: auto;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: auto;
+    margin:0;
+}
+
+
+.header-text {
+    padding: 15px;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    font-size: 24px;
+    padding-top: 30px;
+    width: 70%;
+    text-align: center;
+    font-family: 'SimplyCricketDemiBold' , sans-serif;
+    
+}
+
+/* Form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    padding-top: 5%;
+}
+
+/* Form Text Group */
+.form-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-text-group {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.form-text-group input {
+    font-size: 20px;
+    border-color: #ccc;
+    border-radius: 5px;
+    width: 600px;
+    height: 40px;
+    border-style:solid;
+}
+
+.line-split {
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 3px rgb(180, 180, 180) solid;
+}
+
+/* Form Text Area */
+#rules {
+    color: rgb(124, 173, 50);
+    font-family: 'SimplyCricketDemibold' , sans-serif;
+    font-size: 40px;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-textarea-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    width:800px;
+}
+
+.form-textarea-group label {
+    font-size: 15px;
+}
+
+.form-textarea-group input {
+    width: 24px;
+    height: 24px;
+}
+
+.form-textarea-group textarea {
+    width: 600px;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: none;
+}
+
+/* Form Text Area Scrollbar */
+.form-textarea-group textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.form-textarea-group textarea::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 100vw;
+    margin-block: 10px;
+}
+
+.form-textarea-group textarea::-webkit-scrollbar-thumb {
+    background: rgb(124, 173, 50);
+    border-radius: 100vw;
+}
+
+/* Form Carrier Group */
+.form-carrier-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.form-carrier-group select {
+    font-size: 20px;
+    border-color: #ccc;
+    border-radius: 5px;
+    width: 600px;
+    height: 40px;
+}
+
+.btn-container {
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.btn {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #0081c7;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    background-color: rgb(63, 63, 63);
+}
+
+/* Left Footer */
+.left-footer {
+    padding-left: 15%;
+    width: 40%;
+}
+
+.left-footer p {
+    font-size:12px;
+    line-height: 1.5;
+}
+
+/* Center Footer */
+.center-footer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 15px;
+}
+
+.center-footer a {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size:12px;
+    font-family: 'SimplyCricketDemiBold' , sans-serif;
+}
+
+/* Right Footer */
+.right-footer {
+    padding-right: 15%;
+    width: 40%;
+}
+
+.right-footer h2 {
+    margin: 0%;
+    font-size: 20px;
+}
+
+.right-footer h3 {
+    margin: 0%;
+    font-size: 16px;
+}
+
+.media-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media-logo {
+    padding: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+/* Thank you page */
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../thanksBackground.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;  
+    height: 100vh;
+}
+
+.thank-you-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    width: 50%;
+    height: 80vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#thank-you {
+    font-family: 'SimplyCricketDemiBold' , sans-serif;
+    font-size: 160px; 
+}
+
+#entering-to-win {
+    font-family: 'SimplyCricketDemiBold' , sans-serif;
+    font-size: 40px; 
+    padding-top: 5%; 
+}
+
+#check-out {
+    font-size: 30px; 
+    padding-top: 5%
+}
+
+.thank-you-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+.thank-you-button-style {
+        font-family: 'SimplyCricketDemiBold' , sans-serif;
+        font-size: 25px;
+        border-radius: 8px;
+        background-color: #0081c7;
+        color: white;
+        padding: 25px 35px;
+        text-decoration: none;
+}
+
+.thank-you-buttons div {
+    padding-inline: 100px;
+}
+
+.offer {
+    width: 100vw;  
+    height: 800px;
+    background-image: url(../Offer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1350px) {
+    .right-container h1 {
+        font-size: 50px;
+    }
+    .header-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+    .black-nav-bar a {
+        font-size: 8px;
+        padding: 5px;
+    }
+    #smile {
+        width: 10px;
+        height: auto;
+    }
+    .white-nav-bar a {
+        font-size: 8px;
+        padding: 4px;
+    }
+    #cricket {
+        width: 75px;
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+        height: 65vh;
+    }
+    .right-container h1 {
+        font-size: 25px;
+    }
+    .right-container h2 {
+        font-size: 15px;
+    }
+    .right-container h3 {
+        font-size: 10px;
+    }
+    .header-text {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .form-text-group {
+        font-size: 15px;
+        padding: 30px;
+    }
+    .form-text-group input {
+        font-size: 15px;
+        width: 250px;
+        height: 30px;
+    }
+    #rules {
+        font-size: 20px;
+    }
+    .form-textarea-group {
+        width: 250px;
+    }
+
+    .form-textarea-group label {
+        font-size: 10px;
+    }
+
+    .form-textarea-group input {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .form-textarea-group textarea {
+        width: 250px;
+        height: 100px;
+        font-size: 10px;
+    }
+
+    .form-carrier-group {
+        font-size: 10px;
+        padding: 5px;
+        padding-top: 25px;
+    }
+    
+    .form-carrier-group select {
+        font-size: 10px;
+        width: 250px;
+        height: 30px;
+    }
+    
+    .btn-container {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+    }
+    
+    .btn {
+        width: 90px;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .left-footer {
+        padding-left: 5%;
+    }
+    
+    .left-footer p {
+        font-size:7px;
+        line-height: 1;
+    }
+    .center-footer a {
+        font-size:7px;
+    }
+    .right-footer {
+        padding-right: 5%;
+    }
+    .right-footer h2 {
+        font-size: 10px;
+    }
+    .right-footer h3 {
+        font-size: 7px;
+    }
+    .social-media-logo {
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+
+    /* Thank you page */
+    .thank-you-container {
+        height: 60vh;
+    }
+
+    #thank-you {
+        font-family: 'SimplyCricketDemiBold' , sans-serif;
+        font-size: 40px; 
+    }
+
+    #entering-to-win {
+        font-family: 'SimplyCricketDemiBold' , sans-serif;
+        font-size: 20px; 
+        padding-top: 5px; 
+    }
+
+    #check-out {
+        font-size: 15px; 
+        padding-top: 10px;
+    }
+
+    .thank-you-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .thank-you-buttons div {
+        padding-inline: 25px;
+        padding-bottom: 50px;
+    }
+
+    .thank-you-button-style {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+
+    .offer {
+        width: 100%;
+        height: 250px;
+        background-image: url(../Offer.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

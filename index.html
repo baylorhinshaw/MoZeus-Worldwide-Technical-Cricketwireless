@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoZeus Worldwide Technical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="black-nav-bar">
+        <div class="left valignmiddle">
+            <div>
+                <a href="https://www.cricketwireless.com/myaccount.html#/login"><img id="smile" src="./assets/Smile.png" alt="Sign in or Create Account"></a>
+            </div>
+            <div>
+                <a href="https://www.cricketwireless.com/myaccount.html#/login">Sign In or Create Account</a>
+            </div>
+        </div>
+        <div class="right">
+            <a href="https://www.cricketwireless.com/stores/">Store Locater</a>
+            <a href="https://www.cricketwireless.com/myaccount.html#/quickPay">Quick Pay</a>
+            <a href="https://www.cricketwireless.com/activate.html">Activate</a>
+            <a href="https://espanol.cricketwireless.com/1bt00/inicio-trans.html?v=espanol">Espanol</a>
+        </div>
+    </div>
+    <div class="white-nav-bar">
+        <div class="left" style="width: 25%;">
+            <img id="cricket" src="./assets/CricketWirless_RGB_pos.png" style="max-width:200px;" alt="Cricket Logo">
+        </div>
+        <div class="right" style="width: 75%;">
+            <a href="https://www.cricketwireless.com/current-phone-and-plan-deals" style="margin-left:0px;">Shop</a>
+            <a href="https://www.cricketwireless.com/myaccount.html#/">My Account</a>
+            <a href="https://www.cricketwireless.com/support">Support</a>
+            <a href="https://www.cricketwireless.com/why-cricket">Why Cricket?</a>
+            <a href="https://www.cricketwireless.com/map.html">Coverage</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-container">&nbsp;</div>
+        <div class="right-container">
+            <h2>Win the ultimate</h2>
+            <h1>SummerSlam®</h1>
+            <h1>watch party</h1>
+            <h3>courtesy of Cricket Wireless®</h3>
+            <p class="header-text">Prize includes a 65” TV, a smartphone with one year of service, SummerSlam® merchandise, a virtual meet and greet with WWE® Superstar The Miz®, and more!</p>
+            <h3>Enter for a chance to win below!</h3>
+        </div>
+    </div>
+    <div class="form-container">
+        <form class="my-form" action="javascript:void(0)" onsubmit="submitGiveawayForm()">
+            <div class="form-input-group"> 
+                <div class="form-text-group">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                <div class="form-text-group">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                </div>
+                <div class="form-text-group">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email"><br>
+                </div>
+                <div class="form-text-group">
+                    <label for="pnumber">Phone Number</label><br>
+                    <input type="text" id="pnumber" name="pnumber" placeholder="(   )   -"><br>
+                </div>
+            </div>
+            <div class="line-split"></div>
+            <div class="form-textarea-group">
+                <div>
+                    <label id="rules">Official Rules</label><br>
+                    <textarea style="overflow: scroll; overflow-x: hidden;" readonly>NO PURCHASE OR SUBMISSION TO SALES PRESENTATION NECESSARY TO ENTER OR WIN. MAKING A PURCHASE WILL NOT INCREASE YOUR CHANCE OF WINNING. VOID WHERE PROHIBITED BY LAW. PLEASE READ THESE RULES CAREFULLY.  AS EXPLAINED BELOW, THE RULES REQUIRE THAT DISPUTES ARISING OUT OF OR RELATING TO THIS SWEEPSTAKES BE RESOLVED IN ARBITRATION ON AN INDIVIDUAL BASIS, RATHER THAN BY CLASS ACTIONS OR JURY TRIALS, AND LIMIT YOUR RIGHTS AND REMEDIES IN THE EVENT OF A DISPUTE. Sweepstakes Period: You may enter the 2020 Ultimate SummerSlam Watch Party Sweepstakes presented by Cricket Wireless (“Sweepstakes”) beginning 9:00AM Eastern Time (“ET”) on July 6, 2020 through 11:59PM ET on August 2, 2020 (“Sweepstakes Period”). All Interpretations of these Official Rules and decisions made by Sponsor relating to the Sweepstakes are final. The Administrator's computer is the official timekeeping device for this Sweepstakes.</textarea><br><br>
+                    <input type="checkbox" id="official-rules" name="official-rules">
+                    <label id="rules-agreement" for="official-rules">I agree to the <u>Official Rules</u></label><br><br>
+                    <input type="checkbox" id="email-list" name="email-list" checked>
+                    <label for="email-list">I would like to receive mailing correspondence from Cricket Wireless. (optional)</label>                    
+                </div>
+            </div><br>
+            <div class="form-carrier-group">
+                <div>
+                    <label for="carrier">Who is your wireless carrier?</label><br>
+                    <select id="carrier" name="carrier" >
+                        <option value="-Select One-" selected>-Select One-</option>
+                        <option value="AT&T">AT&T</option>
+                        <option value="Boost Mobile">Boost Mobile</option>
+                        <option value="Cricket Wireless">Cricket Wireless</option>
+                        <option value="Metro by T-Mobile">Metro by T-Mobile</option>
+                        <option value="Sprint">Sprint</option>
+                        <option value="Straight Talk">Straight Talk</option>
+                        <option value="T-Mobile">T-Mobile</option>
+                        <option value="US Cellular">US Cellular</option>
+                        <option value="Verizon">Verizon</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div><br>
+            <div class="line-split"></div>
+            <div class="btn-container">
+                <button type="submit" id="btn" class="btn">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="left-footer">
+            <p>No purchase necessary. Sweepstakes ends 8/2/20. Open to US residents; age of maj & older. Sponsored by Cricket Wireless LLC, 1025 Lenox Park Blvd NE, Atlanta, GA 30319.Void where prohibited. See www.CricketSweepstakes.com/wwe for Official Rules.</p>
+        </div>
+        <div class="center-footer">
+            <a href="https://www.cricketwireless.com/privacy">Privacy Policy</a>
+            <a href="https://www.cricketwireless.com/legal-info/website-terms-of-use.html">Terms of Use</a>
+            <a href="https://www.cricketwireless.com/contactus">Contact Us</a>
+        </div>
+        <div class="right-footer">
+            <h2>Smile, You're on Cricket.</h2>
+            <div class="media-footer">
+                <h3>Join the Cricket Nation</h3>
+                <a href="https://www.facebook.com/cricketwireless">
+                    <img class="social-media-logo" src="./assets/Facebook.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com/CricketNation">
+                    <img class="social-media-logo" src="./assets/Twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/cricketwireless/">
+                    <img class="social-media-logo" src="./assets/Instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com/user/CricketNation">
+                    <img class="social-media-logo" src="./assets/Youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
