@@ -91,6 +91,12 @@ h3 {
     padding: 10px;
 }
 
+.black-nav-bar a:hover {
+    transition: .5s;
+    color: rgb(124, 173, 50);
+}
+
+
 .alignmiddle {
     display: flex;
     flex-direction: row;
@@ -115,6 +121,11 @@ h3 {
     color: black;
     font-size:18px;
     text-decoration: none;
+}
+
+.white-nav-bar a:hover {
+    transition: .5s;
+    color: rgb(124, 173, 50);
 }
 
 /* Using left and right class in both Black and White Navigation Bars */
@@ -214,6 +225,11 @@ h3 {
     border-radius: 5px;
 }
 
+.form-text-group input:hover {
+    transition: .5s;
+    border-color: rgb(124, 173, 50);
+}
+
 .line-split {
     width: 100%;
     padding-top: 10px;
@@ -288,6 +304,11 @@ h3 {
     border-radius: 5px;
 }
 
+.form-carrier-group select:hover {
+    transition: .5s;
+    border-color: rgb(124, 173, 50);
+}
+
 /* Form Button */
 .btn-container {
     text-align: right;
@@ -305,6 +326,13 @@ h3 {
     background-color: #0081c7;
     border: none;
     border-radius: 5px;
+}
+
+.btn:hover {
+    transition: .5s;
+    border: black 1px solid;
+    color: rgb(124, 173, 50);
+    background-color: white;
 }
 
 /* Footer */
@@ -344,6 +372,11 @@ h3 {
     font-size:12px;
     color: white;
     padding: 5px;
+}
+
+.center-footer a:hover {
+    transition: .5s;
+    color: rgb(124, 173, 50);
 }
 
 /* Right Footer */
@@ -433,6 +466,12 @@ h3 {
         text-decoration: none;
         border-radius: 8px;
         padding: 30px 35px 20px 35px;
+}
+
+.thank-you-button-style:hover {
+    transition: .5s;
+    color: rgb(124, 173, 50);
+    background-color: white;
 }
 
 .thank-you-buttons div {

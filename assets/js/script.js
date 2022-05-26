@@ -12,15 +12,18 @@ function submitGiveawayForm() {
     // Checking to see if there are any empty fields
     if(emptyInputFields.length !== 0) {
         console.log("emptyInputFields", emptyInputFields);
+        alert("Fill out highlighted fields!")
         // Each empty field will be yellow
         for (let i = 0; i < emptyInputFields.length; i++) {
             emptyInputFields[i].style.backgroundColor = "yellow";
         }
         // Checking if checkbox is checked or not, if not/false will highlight/mark the text
     } else if(rulesCheckbox.checked === false) {
+        alert("Check highlighted field!")
         rulesAgreementText.innerHTML = "<mark><u>I agree to the <u>Official Rules</u></mark>";
         // Checking to see if the user has selected a carrier
     } else if(selectedCarrier == "-Select One-") {
+        alert("Select highlighted field!")
         phoneCarrierSelect.style.backgroundColor = "yellow";
     } else {
         // Once all fields are filled will bring us to the next page
