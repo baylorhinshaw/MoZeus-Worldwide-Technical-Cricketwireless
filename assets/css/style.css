@@ -92,7 +92,7 @@ h3 {
 }
 
 .black-nav-bar a:hover {
-    transition: .5s;
+    transition: 1s ease;
     color: rgb(124, 173, 50);
 }
 
@@ -124,7 +124,7 @@ h3 {
 }
 
 .white-nav-bar a:hover {
-    transition: .5s;
+    transition: 1s ease;
     color: rgb(124, 173, 50);
 }
 
@@ -226,7 +226,7 @@ h3 {
 }
 
 .form-text-group input:hover {
-    transition: .5s;
+    transition: 1s ease;
     border-color: rgb(124, 173, 50);
 }
 
@@ -305,7 +305,7 @@ h3 {
 }
 
 .form-carrier-group select:hover {
-    transition: .5s;
+    transition: 1s ease;
     border-color: rgb(124, 173, 50);
 }
 
@@ -329,7 +329,7 @@ h3 {
 }
 
 .btn:hover {
-    transition: .5s;
+    transition: 1s ease;
     border: black 1px solid;
     color: rgb(124, 173, 50);
     background-color: white;
@@ -375,7 +375,7 @@ h3 {
 }
 
 .center-footer a:hover {
-    transition: .5s;
+    transition: 1s ease;
     color: rgb(124, 173, 50);
 }
 
@@ -406,6 +406,18 @@ h3 {
     width: 25px;
     height: 25px;
     padding: 15px;
+}
+
+/* Hover Effect For Image Links */
+.shrink img {
+    transition: 1s ease;
+}
+    
+.shrink img:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    transition: 1s ease;
 }
 
 /* Thank You Container */
@@ -469,7 +481,8 @@ h3 {
 }
 
 .thank-you-button-style:hover {
-    transition: .5s;
+    transition: 1s ease;
+    border: black 1px solid;
     color: rgb(124, 173, 50);
     background-color: white;
 }
