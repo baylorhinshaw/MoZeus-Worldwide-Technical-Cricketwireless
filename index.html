@@ -8,8 +8,10 @@
 </head>
 
 <body>
+    <!-- Black Navigation Bar -->
     <div class="black-nav-bar">
-        <div class="left valignmiddle">
+        <div class="left alignmiddle">
+            <!-- Added a tags to both, looked odd when trying to wrap the a tag, best solution to keep pretty -->
             <div>
                 <a href="https://www.cricketwireless.com/myaccount.html#/login"><img id="smile" src="./assets/Smile.png" alt="Sign in or Create Account"></a>
             </div>
@@ -24,7 +26,9 @@
             <a href="https://espanol.cricketwireless.com/1bt00/inicio-trans.html?v=espanol">Espanol</a>
         </div>
     </div>
+    <!-- White Navigation Bar -->
     <div class="white-nav-bar">
+        <!-- Inline styling to overwrite the original width -->
         <div class="left" style="width: 25%;">
             <img id="cricket" src="./assets/CricketWirless_RGB_pos.png" style="max-width:200px;" alt="Cricket Logo">
         </div>
@@ -36,8 +40,9 @@
             <a href="https://www.cricketwireless.com/map.html">Coverage</a>
         </div>
     </div>
+    <!--WWE Container-->
     <div class="container">
-        <div class="left-container">&nbsp;</div>
+        <div class="left-container"></div>
         <div class="right-container">
             <h2>Win the ultimate</h2>
             <h1>SummerSlam®</h1>
@@ -47,8 +52,11 @@
             <h3>Enter for a chance to win below!</h3>
         </div>
     </div>
+    <!-- Form -->
     <div class="form-container">
+        <!-- Calling function from JS onsubmit -->
         <form class="my-form" action="javascript:void(0)" onsubmit="submitGiveawayForm()">
+            <!-- Form Text Group -->
             <div class="form-input-group"> 
                 <div class="form-text-group">
                     <label for="fname">First Name</label><br>
@@ -68,6 +76,7 @@
                 </div>
             </div>
             <div class="line-split"></div>
+            <!-- Form Textarea Group -->
             <div class="form-textarea-group">
                 <div>
                     <label id="rules">Official Rules</label><br>
@@ -78,6 +87,7 @@
                     <label for="email-list">I would like to receive mailing correspondence from Cricket Wireless. (optional)</label>                    
                 </div>
             </div><br>
+            <!-- Form Carrier Group -->
             <div class="form-carrier-group">
                 <div>
                     <label for="carrier">Who is your wireless carrier?</label><br>
@@ -97,6 +107,7 @@
                 </div>
             </div><br>
             <div class="line-split"></div>
+            <!-- Form Button -->
             <div class="btn-container">
                 <button type="submit" id="btn" class="btn">
                     Submit
@@ -104,6 +115,7 @@
             </div>
         </form>
     </div>
+    <!-- Footer -->
     <div class="footer">
         <div class="left-footer">
             <p>No purchase necessary. Sweepstakes ends 8/2/20. Open to US residents; age of maj & older. Sponsored by Cricket Wireless LLC, 1025 Lenox Park Blvd NE, Atlanta, GA 30319.Void where prohibited. See www.CricketSweepstakes.com/wwe for Official Rules.</p>
@@ -115,7 +127,8 @@
         </div>
         <div class="right-footer">
             <h2>Smile, You're on Cricket.</h2>
-            <div class="media-footer">
+            <!-- Social Media -->
+            <div class="social-media-footer">
                 <h3>Join the Cricket Nation</h3>
                 <a href="https://www.facebook.com/cricketwireless">
                     <img class="social-media-logo" src="./assets/Facebook.png" alt="facebook">

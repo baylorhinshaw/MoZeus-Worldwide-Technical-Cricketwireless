@@ -43,11 +43,11 @@
 }
 
 body {    
-    margin: 0%;
-    width:100%;
-    max-width:100vh;
     font-family: 'SimplyCricketBook' , sans-serif;
     font-size:16px;
+    width:100%;
+    max-width:100vh;
+    margin: 0%;
 }
 
 h1, h2, h4, h5, h6 {
@@ -61,17 +61,17 @@ h1 {
 
 h2 {
     font-family: 'SimplyCricketDemibold' , sans-serif;
-    padding-top: 4%;
-    color: white;
     font-size: 40px;
+    color: white;
+    padding-top: 4%;
     margin:2%;
 }
 
 h3 {
     font-family: 'SimplyCricketDemibold' , sans-serif;
-    color: white;
     font-size: 20px;
-    margin: 0px;
+    color: white;
+    margin: 0%;
 }
 
 /* Black Navigation Bar */
@@ -82,16 +82,16 @@ h3 {
     width: 100vw;
     height: 5vh;
     color: white;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(65, 65, 65);
 }
 
 .black-nav-bar a {
-    padding: 10px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.valignmiddle {
+.alignmiddle {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -135,33 +135,27 @@ h3 {
     margin:0;
 }
 
-/* WWE Superstar The Miz Container */
+/* WWE Container */
 .container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100vw;  
+    height: 70vh;
     color: white;
-    background-image: url(../Characters.png);
     background-color: rgb(124, 173, 50);
+    background-image: url(../Characters.png);
     background-size: contain;
     background-position: bottom left;
     background-repeat: no-repeat;
-    width: 100vw;  
-    align-items: center;
-    height: 50vh;
     padding: 0;
     margin: 0%;
 }
-
 
 .left-container {
     width: 50vw;
     height: auto;
     margin:0;
-}
-
-#summer-slam {
-    width: 70%;
-    height: auto;
 }
 
 .right-container {
@@ -173,17 +167,15 @@ h3 {
     margin:0;
 }
 
-
 .header-text {
+    font-family: 'SimplyCricketDemiBold' , sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 70%;
     padding: 15px;
+    padding-top: 30px;
     border-top: 2px white solid;
     border-bottom: 2px white solid;
-    font-size: 24px;
-    padding-top: 30px;
-    width: 70%;
-    text-align: center;
-    font-family: 'SimplyCricketDemiBold' , sans-serif;
-    
 }
 
 /* Form */
@@ -193,6 +185,12 @@ h3 {
     width: 100vw;
     height: auto;
     padding-top: 5%;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Form Text Group */
@@ -209,11 +207,11 @@ h3 {
 
 .form-text-group input {
     font-size: 20px;
-    border-color: #ccc;
-    border-radius: 5px;
     width: 600px;
     height: 40px;
+    border-color: #ccc;
     border-style:solid;
+    border-radius: 5px;
 }
 
 .line-split {
@@ -222,29 +220,29 @@ h3 {
     border-bottom: 3px rgb(180, 180, 180) solid;
 }
 
-/* Form Text Area */
-#rules {
-    color: rgb(124, 173, 50);
-    font-family: 'SimplyCricketDemibold' , sans-serif;
-    font-size: 40px;
-}
-
-.my-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Form Textarea Area */
 .form-textarea-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
     width:800px;
+    padding-top: 50px;
 }
 
-.form-textarea-group label {
-    font-size: 15px;
+#rules {
+    font-family: 'SimplyCricketDemibold' , sans-serif;
+    font-size: 40px;
+    color: rgb(124, 173, 50);
+}
+
+.form-textarea-group textarea {
+    font-size: 18px;
+    width: 600px;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
 
 .form-textarea-group input {
@@ -252,17 +250,11 @@ h3 {
     height: 24px;
 }
 
-.form-textarea-group textarea {
-    width: 600px;
-    height: 150px;
-    padding: 15px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 18px;
-    resize: none;
+.form-textarea-group label {
+    font-size: 15px;
 }
 
-/* Form Text Area Scrollbar */
+/* Form Textarea Scrollbar */
 .form-textarea-group textarea::-webkit-scrollbar {
     width: 8px;
 }
@@ -290,14 +282,16 @@ h3 {
 
 .form-carrier-group select {
     font-size: 20px;
-    border-color: #ccc;
-    border-radius: 5px;
     width: 600px;
     height: 40px;
+    border-color: #ccc;
+    border-radius: 5px;
 }
 
+/* Form Button */
 .btn-container {
     text-align: right;
+    width: 80%;
     padding-top: 20px;
     padding-bottom: 30px;
     padding-right: 10px;
@@ -307,10 +301,10 @@ h3 {
     width: 120px;
     height: 50px;
     font-size: 20px;
-    border: none;
-    border-radius: 5px;
     color: white;
     background-color: #0081c7;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -319,19 +313,20 @@ h3 {
     flex-direction: row;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     color: white;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(65, 65, 65);
 }
 
 /* Left Footer */
 .left-footer {
     padding-left: 15%;
+    padding-right: 5%;
     width: 40%;
 }
 
 .left-footer p {
-    font-size:12px;
+    font-size:10px;
     line-height: 1.5;
 }
 
@@ -344,77 +339,77 @@ h3 {
 }
 
 .center-footer a {
-    padding: 5px;
-    color: white;
-    text-align: center;
-    font-size:12px;
+    text-align: left;
     font-family: 'SimplyCricketDemiBold' , sans-serif;
+    font-size:12px;
+    color: white;
+    padding: 5px;
 }
 
 /* Right Footer */
 .right-footer {
-    padding-right: 15%;
     width: 40%;
+    padding-right: 15%;
 }
 
 .right-footer h2 {
-    margin: 0%;
     font-size: 20px;
+    margin: 0%;
 }
 
 .right-footer h3 {
+    font-size: 15px;
     margin: 0%;
-    font-size: 16px;
 }
 
-.media-footer {
+/* Social Media */
+.social-media-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .social-media-logo {
-    padding: 15px;
     width: 25px;
     height: 25px;
+    padding: 15px;
 }
 
-/* Thank you page */
+/* Thank You Container */
 .thank-you-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;  
+    height: 100vh;
     background-image: url(../thanksBackground.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;  
-    height: 100vh;
 }
 
+/* Thank You Text */
 .thank-you-text {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     text-align: center;
-    color: white;
-    line-height: 1.5;
     width: 50%;
     height: 80vh;
+    color: white;
+    line-height: 1.5;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 #thank-you {
     font-family: 'SimplyCricketDemiBold' , sans-serif;
-    font-size: 160px; 
+    font-size: 150px; 
 }
 
 #entering-to-win {
     font-family: 'SimplyCricketDemiBold' , sans-serif;
     font-size: 40px; 
-    padding-top: 5%; 
 }
 
 #check-out {
@@ -422,6 +417,7 @@ h3 {
     padding-top: 5%
 }
 
+/* Thank You Buttons */
 .thank-you-buttons {
     display: flex;
     flex-direction: row;
@@ -432,20 +428,21 @@ h3 {
 .thank-you-button-style {
         font-family: 'SimplyCricketDemiBold' , sans-serif;
         font-size: 25px;
-        border-radius: 8px;
-        background-color: #0081c7;
         color: white;
-        padding: 25px 35px;
+        background-color: #0081c7;
         text-decoration: none;
+        border-radius: 8px;
+        padding: 30px 35px 20px 35px;
 }
 
 .thank-you-buttons div {
-    padding-inline: 100px;
+    padding-inline: 80px;
 }
 
-.offer {
+/* BFD */
+.BFD {
     width: 100vw;  
-    height: 800px;
+    height: 1000px;
     background-image: url(../Offer.png);
     background-size: cover;
     background-position: center;
@@ -453,33 +450,116 @@ h3 {
 }
 
 @media (max-width: 1350px) {
+    /* Nav Bars */
+    .black-nav-bar a {
+        font-size: 12px;
+    }
+    #smile {
+        width: 15px;
+        height: auto;
+    }
+    .white-nav-bar a {
+        font-size: 15px;
+    }
+    #cricket {
+        width: 100px;
+        height: auto;
+    }
+
+    /* WWE Container */
     .right-container h1 {
         font-size: 50px;
     }
     .header-text {
         font-size: 18px;
     }
+
+    /* Footer */
+    .left-footer p {
+        font-size:8px;
+    }
+    .center-footer a {
+        font-size:10px;
+    }
+    .right-footer h2 {
+        font-size: 12px;
+    }
+    .right-footer h3 {
+        font-size: 10px;
+    }
+    .social-media-logo {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Thank You Page */    
+    #thank-you {
+        font-size: 80px; 
+    }
+    
+    #entering-to-win {
+        font-size: 30px; 
+    }
+    
+    #check-out {
+        font-size: 20px; 
+    }
+    .thank-you-button-style {
+        font-size: 15px;
+        padding: 20px 25px 10px 25px;
+    }
+
+    /* BFD */
+    .BFD {
+        width: 100vw;  
+        height: 600px;
+    }
 }
 
 @media (max-width: 520px) {
+    /* Nav Bars */
+    .black-nav-bar {
+        flex-direction: column;
+        height: 6vh;
+    }
     .black-nav-bar a {
         font-size: 8px;
         padding: 5px;
     }
     #smile {
-        width: 10px;
-        height: auto;
+        width: 15px;
+    }
+    #cricket {
+        width: 70px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .white-nav-bar {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 8vh;
     }
     .white-nav-bar a {
         font-size: 8px;
-        padding: 4px;
+        margin-left: 5%;
     }
-    #cricket {
-        width: 75px;
-        height: auto;
+    .left {
+        width: 42vw;
+        padding-left: 5%;
     }
+    .right {
+        justify-content: flex-end;
+        text-align: center;
+        width: 100vw;
+        padding-top: 5px;
+        padding-right: 0%;
+    }
+
+    /* Container */
     .container {
         flex-direction: column;
+        padding-top: 15px;
         height: 65vh;
     }
     .right-container h1 {
@@ -495,6 +575,8 @@ h3 {
         padding: 10px;
         font-size: 12px;
     }
+
+    /* Form */
     .form-text-group {
         font-size: 15px;
         padding: 30px;
@@ -510,53 +592,48 @@ h3 {
     .form-textarea-group {
         width: 250px;
     }
-
     .form-textarea-group label {
         font-size: 10px;
     }
-
     .form-textarea-group input {
         width: 12px;
         height: 12px;
     }
-    
     .form-textarea-group textarea {
         width: 250px;
         height: 100px;
         font-size: 10px;
     }
-
     .form-carrier-group {
         font-size: 10px;
         padding: 5px;
         padding-top: 25px;
     }
-    
     .form-carrier-group select {
         font-size: 10px;
         width: 250px;
         height: 30px;
     }
     
+    /* Btn */
     .btn-container {
         text-align: center;
         padding-top: 20px;
         padding-bottom: 30px;
         padding-right: 10px;
     }
-    
     .btn {
         width: 90px;
         height: 20px;
         font-size: 15px;
     }
 
+    /* Footer */
     .left-footer {
         padding-left: 5%;
     }
-    
     .left-footer p {
-        font-size:7px;
+        font-size:5px;
         line-height: 1;
     }
     .center-footer a {
@@ -566,62 +643,49 @@ h3 {
         padding-right: 5%;
     }
     .right-footer h2 {
-        font-size: 10px;
+        font-size: 8px;
     }
     .right-footer h3 {
-        font-size: 7px;
+        font-size: 5px;
     }
     .social-media-logo {
-        padding: 5px;
-        width: 15px;
-        height: 15px;
+        width: 8px;
+        height: 8px;
+        padding: 3px;
     }
-
 
     /* Thank you page */
     .thank-you-container {
         height: 60vh;
     }
-
     #thank-you {
-        font-family: 'SimplyCricketDemiBold' , sans-serif;
-        font-size: 40px; 
+        font-size: 30px; 
     }
-
     #entering-to-win {
-        font-family: 'SimplyCricketDemiBold' , sans-serif;
-        font-size: 20px; 
+        font-size: 15px; 
         padding-top: 5px; 
     }
-
     #check-out {
-        font-size: 15px; 
+        font-size: 12px; 
         padding-top: 10px;
     }
-
     .thank-you-buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 100vw;
     }
-
     .thank-you-buttons div {
         padding-inline: 25px;
-        padding-bottom: 50px;
+        padding-bottom: 30%;
     }
-
     .thank-you-button-style {
         font-size: 10px;
-        padding: 5px 15px;
+        padding: 10px 15px 5px 15px;
     }
-
-    .offer {
+    .BFD {
         width: 100%;
         height: 250px;
         background-image: url(../Offer.png);
         background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 }
